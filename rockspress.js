@@ -38,7 +38,7 @@ class Rockspress {
         this.router[req.method][req.url](req, res);
     }
 
-    async setupRequest(request) {
+    setupRequest(request) {
         request.body = '';
 
         request.on('data', chunk => {
