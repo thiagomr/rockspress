@@ -41,13 +41,13 @@ rockspress.get('/', (req, res) => {
 });
 
 rockspress.get('/ping', (req, res) => {
-    return res.status(500).send('pong');
+    return res.status(200).send('pong');
 });
 
 rockspress.post('/send', (req, res) => {
     console.log('request body', req.body);
 
-    return res.status(500).send('sent');
+    return res.status(200).send('sent');
 });
 
 rockspress.get('/error', (req, res) => {
